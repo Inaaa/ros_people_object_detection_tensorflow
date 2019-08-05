@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node name="create_cloud_xyzrgb" pkg="cob_people_object_detection_tensorflow" type="test.py" output="screen"  >
+#launch-prefix="xterm -e python -m pdb "
+  </node>
+</launch>
