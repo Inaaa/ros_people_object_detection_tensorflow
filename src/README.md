@@ -1,4 +1,5 @@
 cc_people_pointcloud
+
 Mask rcnn, tensorrt,tensorflow This package demonstrated people semantic segmentation using ROS.
 
 Tech
@@ -13,8 +14,6 @@ First, tensorflow-gpu should be installed on your system. In this project I use 
 
 Then, $ cd && mkdir -p catkin_ws/src && cd catkin_ws $ catkin_make && cd src $ git clone --recursive https://github.com/cagbal/ros_people_object_detection_tensorflow.git $ git clone https://githup.com/Inaaa/cc_people_pointcloud.git
 
-Second, put the model src/mask_rcnn_inception_v2_coco_tensorrt into ros_people_object_detection_tensorflow/src/object_detection/
-
-and change the model_name parameter of launch/cob_people_object_detection_tensoflow_params.yaml into mask_rcnn_inception_v2_coco_tensorrt.
+Second change the model_name parameter of launch/cob_people_object_detection_tensoflow_params.yaml into mask_rcnn_inception_v2_coco_tensorrt.
 
 Here you should at first run the ros_people_object_detection_tensorflow. Furthermore, $ roslaunch cc_people_pointcloud rgbdpoints.launch
